@@ -10,11 +10,14 @@ fetch('api/v1/colors')
     console.log(colors);
     colors.forEach(color => {
       const li = document.createElement('li');
+      const a = document.createElement('a');
       li.textContent = `${color.name} - ${color.hex} - ${color.r} - ${color.g} - ${color.b}`;
-
-      colorsList.appendChild(li);
+      a.href = `/colors.html?name=${color.name}`;
+      a.appendChild(li);
+      colorsList.appendChild(a);
     });
 
   });
 
 root.appendChild(colorsList);
+
