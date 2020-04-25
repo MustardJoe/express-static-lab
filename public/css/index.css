@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
 body {
   background-color: mediumspringgreen;
   color: steelblue;
+  list-style: none;
+  font-family: 'Days One', sans-serif;
+  margin: 50px;
+}
+
+.monof {
+  font-family: 'Space Mono', monospace;
 }
